@@ -20,28 +20,6 @@
     "priority": {
       "type": "integer"
     },
-    "primaryphoto": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false
-    },
-    "othermedia": {
-      "collection": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false
-    },
     "skills": {
       "collection": "skill"
     },
@@ -49,6 +27,15 @@
       "type": "string"
     },
     "githublink": {
+      "type": "string"
+    },
+    "primaryphotourl": {
+      "type": "string"
+    },
+    "secondphotourl": {
+      "type": "string"
+    },
+    "thirdphotourl": {
       "type": "string"
     }
   }
