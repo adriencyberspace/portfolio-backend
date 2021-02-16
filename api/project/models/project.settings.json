@@ -29,14 +29,27 @@
     "githublink": {
       "type": "string"
     },
-    "primaryphotourl": {
-      "type": "string"
+    "primaryphoto": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
     },
-    "secondphotourl": {
-      "type": "string"
-    },
-    "thirdphotourl": {
-      "type": "string"
+    "secondarymedia": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }
